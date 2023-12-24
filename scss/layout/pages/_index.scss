@@ -1,0 +1,196 @@
+// banner section styling
+.banner-section {
+  .container {
+    .row {
+      .banner-desc-col {
+        padding-right: 4rem;
+      }
+
+      .banner-img-col {
+        > figure:last-child {
+          top: 25%;
+          right: 20%;
+          figcaption {
+            width: 18rem;
+            top: 10%;
+            left: -32%;
+            figure {
+              background: $yellow-color;
+              top: 0;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            .sms {
+              padding: 3rem 2rem;
+              background: $light-blue-color;
+              box-shadow: none;
+            }
+
+            .triangle {
+              border-color: transparent transparent transparent
+                $light-blue-color;
+            }
+          }
+          animation: bouncing-animation-1 1.5s infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+// about section styling
+.about-section {
+  .container {
+    .row {
+      justify-content: space-between;
+      .about-desc-col {
+        padding-left: 4rem;
+      }
+
+      .about-img-col {
+        > figure:first-child {
+          figcaption {
+            position: absolute;
+            top: -1rem;
+            right: -3rem;
+            width: 13rem;
+            height: 12rem;
+            figure {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        > figure:last-child {
+          top: -12%;
+          left: 0.5%;
+          figcaption {
+            width: 20.5rem;
+            top: 10%;
+            left: 40%;
+
+            figure {
+              background: $blue-color;
+              top: 0;
+              left: 70%;
+              transform: translate(-50%, -50%);
+            }
+            .sms {
+              padding: 1.5rem;
+              background: $light-gray-color;
+              font-size: 1rem;
+            }
+          }
+          animation: bouncing-animation-1 1.5s infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+// why section styling
+.why-section {
+  .container {
+    .row {
+      .why-img-col {
+        > figure:last-child {
+          top: 25%;
+          right: 27%;
+          figcaption {
+            width: 27.5rem;
+            top: 25%;
+            left: -45%;
+            .sms {
+              padding: 2rem;
+              background: $white-color;
+            }
+            figure {
+              top: 0;
+              right: -60%;
+              background: none;
+              border: none;
+              box-shadow: none;
+              width: 4.3rem;
+              height: 4.3rem;
+            }
+            .triangle {
+              border-color: transparent transparent transparent $white-color;
+            }
+          }
+          animation: bouncing-animation-1 1.5s infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+// question section styling
+.question-section {
+  .container {
+    .row {
+      justify-content: space-between;
+      .question-img-col {
+        > figure:first-child {
+          transform: rotate(21.807deg);
+        }
+        > figure:nth-child(2) {
+          transform: rotate(34.838deg);
+          top: 10%;
+          right: 5%;
+        }
+        > figure:last-child {
+          top: 5.4%;
+          left: 13%;
+          .email-icon {
+            position: absolute;
+            top: 25%;
+            right: 0;
+            figure {
+              width: 5rem;
+            }
+          }
+          animation: bouncing-animation-2 1.5s infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+// service section styling
+.service-section {
+  .container {
+    > .row {
+      justify-content: space-between;
+      align-items: center;
+      .row {
+        row-gap: 1.5rem;
+      }
+    }
+  }
+}
+
+// youtube section styling
+.youtube-section {
+  .container {
+    .youtube-wrapper {
+      counter-reset: my-counter 0;
+      display: flex;
+      width: 100%;
+      height: 40.4rem;
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url("../images/youtube-section-bg.jpg") center no-repeat;
+      background-size: cover;
+      border-radius: 2rem;
+      .youtube-card {
+        flex: 1;
+      }
+      .youtube-card:last-child {
+        border-right: none;
+      }
+    }
+  }
+}

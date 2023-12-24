@@ -1,0 +1,16 @@
+.blog-page-detail {
+  margin: 0;
+  .container {
+    .section-description {
+      p {
+        text-align: center;
+      }
+    }
+    .blog-card {
+      background: $secondary-color;
+      .secondary-btn {
+        background: $secondary-color;
+      }
+    }
+  }
+}

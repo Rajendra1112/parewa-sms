@@ -1,0 +1,142 @@
+footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../images/footer-img.png") no-repeat center;
+  background-size: cover;
+
+  .container {
+    color: $white-color;
+    a {
+      color: $white-color;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        @include inter-font(2rem, 400, normal);
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    .upper-footer {
+      .row {
+        .footer-title {
+          @include inter-font(2.4rem, 500, normal);
+          margin-bottom: 2rem;
+        }
+        p {
+          @include inter-font(1.6rem, 400, 2.6rem);
+          text-align: justify;
+          margin-bottom: 4rem;
+        }
+
+        .follow-us {
+          .social-media {
+            ul {
+              display: flex;
+              column-gap: 2rem;
+              margin: 0;
+              li {
+                i {
+                  font-size: 3.3rem;
+                }
+              }
+            }
+          }
+        }
+        > div:first-child {
+          padding-right: 4rem;
+        }
+        > div:last-child {
+          ul {
+            li {
+              display: flex;
+              align-items: center;
+              column-gap: 2rem;
+              margin-bottom: 2rem;
+              a {
+                word-break: break-word;
+              }
+
+              i {
+                font-size: 2.4rem;
+                color: $primary-color;
+                background: $white-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                border-radius: 50%;
+                flex-shrink: 0;
+              }
+            }
+            > li:last-child {
+              i {
+                width: 4.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .lower-footer {
+      ul {
+        display: flex;
+        margin: 0;
+        li {
+          @include inter-font(1.4rem, 400, normal);
+        }
+      }
+
+      > ul:first-child {
+        justify-content: end;
+        li {
+          margin: 0;
+          > a {
+            padding: 0 1rem;
+            border-right: 0.1rem solid $white-color;
+          }
+          > a:last-child {
+            border: none;
+            padding-right: 0;
+          }
+        }
+      }
+
+      .footer-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 32vw;
+          height: 0.1rem;
+          background: #fff;
+        }
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 32vw;
+          height: 0.1rem;
+          background: #fff;
+        }
+      }
+
+      > ul:last-child {
+        justify-content: space-between;
+        .developer {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.documentation-page-detail {
+  margin: 0;
+  .container {
+    .section-description {
+      .code-wrapper {
+        pre {
+          background: #f6f6f6;
+          padding: 0 2rem;
+          height: 100vh;
+          overflow: auto;
+          code {
+            @include poppins-font(1.6rem, 500, 3rem);
+          }
+        }
+      }
+    }
+  }
+}

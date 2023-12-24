@@ -1,0 +1,49 @@
+.about-page {
+  .about-page-detail {
+    .container {
+      > .row:first-child {
+        justify-content: space-between;
+        align-items: center;
+        .about-img-col {
+          > figure:first-child {
+            figcaption {
+              position: absolute;
+              top: -1rem;
+              right: -3rem;
+              width: 13rem;
+              height: 12rem;
+              figure {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          > figure:last-child {
+            top: -12%;
+            left: 0.5%;
+            figcaption {
+              width: 20.5rem;
+              top: 10%;
+              left: 40%;
+              figure {
+                background: $blue-color;
+                top: 0;
+                left: 70%;
+                transform: translate(-50%, -50%);
+              }
+              .sms {
+                padding: 1.5rem;
+                background: $light-gray-color;
+                font-size: 1rem;
+              }
+            }
+            animation: bouncing-animation-1 1.5s infinite alternate;
+          }
+        }
+      }
+      > .row:last-child {
+        counter-reset: my-counter-2 0;
+      }
+    }
+  }
+}

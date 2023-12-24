@@ -1,0 +1,1060 @@
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $black-color;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.primary-btn {
+  @include poppins-font(1.6rem, 600, 1.6rem);
+  padding: 1.6rem 1.8rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid $primary-color;
+  box-shadow: -0.4rem 0.4rem 0px 0px #000;
+  color: $primary-color;
+  background: $white-color;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translate(0.1rem, -0.2rem);
+    box-shadow: -0.5rem 0.6rem 0px 0px #000;
+  }
+}
+
+.secondary-btn {
+  width: max-content;
+  @include poppins-font(1.6rem, 500, 3rem);
+  border: none;
+  outline: none;
+  color: $primary-color;
+  background: $white-color;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 6.8rem;
+    height: 0.2rem;
+    background: $dark-gray-color;
+  }
+}
+
+@keyframes bouncing-animation-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -1rem);
+  }
+}
+
+@keyframes bouncing-animation-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(3rem);
+  }
+}
+
+.banner-heading {
+  @include inter-font(4.6rem, 600, 6rem);
+  margin-bottom: 2rem;
+  span {
+    color: $primary-color;
+  }
+}
+
+.banner-sub-heading {
+  @include poppins-font(2rem, 400, 3rem);
+  margin-bottom: 2rem;
+}
+
+section,
+footer {
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  @include inter-font(3.6rem, 700, 3.6rem);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  margin-bottom: 2rem;
+  &::after {
+    content: url("../images/after-section-heading-img.svg");
+    height: 5rem;
+  }
+}
+
+.inner-page-title {
+  @include poppins-font(2.4rem, 600, 3rem);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+// common class for description
+.section-description {
+  margin-bottom: 2rem;
+  p {
+    margin-bottom: 20px !important;
+    @include poppins-font(1.6rem, 400, 2.6rem);
+    text-align: justify;
+    &:last-child {
+      margin-bottom: 0px !important;
+    }
+    a {
+      font-weight: 500;
+      font-style: italic;
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+    img {
+      margin: 20px 0px;
+      width: 100%;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500 !important;
+    margin: 20px 0px !important;
+    font-family: "Poppins", sans-serif;
+    color: #444;
+  }
+  h1 {
+    font-size: 2.6rem !important;
+    line-height: 2.6rem !important;
+  }
+  h2 {
+    font-size: 2.4rem !important;
+    line-height: 2.4rem !important;
+  }
+  h3 {
+    font-size: 2.2rem !important;
+    line-height: 2.2rem !important;
+  }
+  h4 {
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+  }
+  h5 {
+    font-size: 1.8rem !important;
+    line-height: 1.8rem !important;
+  }
+  h6 {
+    font-size: 1.6rem !important;
+    line-height: 1.6rem !important;
+  }
+  ol {
+    margin: 20px !important;
+    list-style: decimal;
+    li {
+      @include poppins-font(1.6rem, 400, 2.16rem);
+      padding: 5px 0px;
+      display: list-item;
+      a {
+        color: $primary-color !important;
+
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+  ul {
+    margin: 20px !important;
+    list-style: none;
+    li {
+      @include poppins-font(1.6rem, 400, 2.16rem);
+      padding: 5px 0px;
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+      &::before {
+        display: inline-block;
+        width: 2.4rem;
+        height: 2.4rem;
+        content: url("../images/why-list-icon.svg");
+      }
+      a {
+        color: $primary-color !important;
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+  blockquote {
+    position: relative;
+    border: 0.2rem solid $primary-color;
+    border-radius: 1.5rem;
+    background: #fff;
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+    p {
+      @include poppins-font(1.6rem, 500, 2.6rem);
+      text-align: justify;
+      font-style: italic;
+    }
+    &::before {
+      content: url("../images/quotation-left-icon.svg");
+      display: inline-block;
+      width: 5rem;
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      transform: translate(0, -50%);
+    }
+
+    &::after {
+      content: url("../images/quotation-right-icon.svg");
+      display: inline-block;
+      width: 5rem;
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+      transform: translate(0, 50%);
+    }
+  }
+
+  // accordion inside section-description common class
+  .accordion {
+    --bs-accordion-active-color: #fff !important;
+    --bs-accordion-active-bg: #519043 !important;
+    --bs-accordion-btn-focus-border-color: none !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+
+    h2 {
+      margin: 0 !important;
+    }
+    .accordion-item {
+      margin: 1rem 0;
+      border-radius: 1rem;
+      border: 1px solid $dark-gray-color;
+      overflow: hidden;
+      .accordion-header {
+        .accordion-button {
+          @include poppins-font(1.8rem, 400, normal);
+          padding: 1rem 2rem;
+          align-items: center;
+          justify-content: space-between;
+
+          &::after {
+            margin: 0;
+            background-image: none;
+            content: "\f078";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            @include flex-center;
+            margin-right: 0.4rem;
+          }
+        }
+      }
+      .accordion-collapse {
+        .accordion-body {
+          text-align: justify;
+          padding: 1.8rem 2rem;
+          @include poppins-font(1.6rem, 400, normal);
+          background: $white-color;
+        }
+      }
+    }
+  }
+
+  // table inside section description common class
+  .table-wrapper {
+    overflow-x: auto;
+    table {
+      min-width: 60rem;
+      margin-bottom: 2rem !important;
+      border-collapse: inherit;
+      border-spacing: 0;
+      thead {
+        tr {
+          @include inter-font(1.4rem, 700, 1.8rem);
+          color: $white-color;
+          background: #59a548;
+          th {
+            padding: 1rem !important;
+            border: 1px solid #006838;
+            border-top: 2px solid #006838;
+          }
+        }
+        tr:first-child {
+          th:first-child {
+            border-top-left-radius: 0.6rem;
+          }
+          th:last-child {
+            border-top-right-radius: 0.6rem;
+          }
+        }
+      }
+      tbody {
+        tr {
+          @include inter-font(1.4rem, 400, 1.8rem);
+          td {
+            padding: 1rem !important;
+            border: 1px solid #006838;
+          }
+        }
+        tr:last-child {
+          td:first-child {
+            border-bottom-left-radius: 0.6rem;
+          }
+
+          td:last-child {
+            border-bottom-right-radius: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// img-col common class
+.img-col {
+  position: relative;
+  width: 100%;
+  height: 45rem;
+  max-height: 45rem;
+
+  > figure {
+    position: absolute;
+    overflow: visible;
+  }
+  > figure:first-child {
+    top: 0;
+    right: 0;
+  }
+  > figure:nth-child(2) {
+    top: 15%;
+    right: 10%;
+  }
+  > figure:last-child {
+    figcaption {
+      position: absolute;
+      figure {
+        position: absolute;
+        width: 2.8rem;
+        height: 2.8rem;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+      }
+      .sms {
+        border-radius: 1rem;
+        @include poppins-font(1.2rem, 400, 1.3rem);
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+      }
+      .triangle {
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 1rem 0 1rem 2rem;
+        transform: rotate(0deg);
+        position: absolute;
+        left: 100%;
+        top: 50%;
+      }
+    }
+  }
+}
+
+// common class for bg color of section
+.section-bg-color {
+  position: relative;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    // height: 74.967rem;
+    height: 100%;
+    background: $secondary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+// so set gap between the row
+.container {
+  > .row {
+    margin-bottom: 2rem;
+  }
+  > .row:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// common class for form
+form {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  padding: 4rem;
+  border-radius: 1.5rem;
+  margin: 0 !important;
+  > div {
+    position: relative;
+    margin: 0 0 2rem 0;
+    label {
+      padding: 0 0.4rem;
+      @include poppins-font(1.4rem, 400, normal);
+      position: absolute;
+      margin: 0;
+      top: -1rem;
+      left: 2rem;
+      background: $white-color;
+    }
+    input,
+    textarea {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.4rem !important;
+      padding: 1rem 2rem !important;
+      border: 2px solid $border-color !important;
+      border-radius: 0.5rem;
+      outline: none;
+    }
+
+    .valid-feedback,
+    .invalid-feedback {
+      @include poppins-font(1.4rem, 400, normal);
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+
+  > div:last-child {
+    position: static;
+    margin: 0;
+  }
+}
+
+// common card class
+.card {
+  figure {
+    margin-bottom: 2rem;
+  }
+  .card-body {
+    .card-title {
+      margin-bottom: 2rem;
+    }
+    .card-text {
+      @include poppins-font(1.6rem, 400, 2.6rem);
+      margin-bottom: 2rem;
+      @include line-clamp(3);
+      text-align: justify;
+    }
+  }
+}
+
+// common class for service card
+.service-card {
+  .card {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    figure {
+      width: 7rem;
+    }
+    .card-body {
+      padding: 0;
+      .card-title {
+        @include poppins-font(1.8rem, 600, 1.8rem);
+      }
+      .card-text {
+        @include line-clamp(5);
+        margin: 0;
+      }
+    }
+  }
+  &:hover {
+    .card-title {
+      color: $light-green-color;
+    }
+  }
+}
+
+// common class that contain css counter
+.youtube-card {
+  overflow: hidden;
+  border-right: 1px solid $white-color;
+  .youtube-card-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: $white-color;
+    transition: all 0.5s ease-in-out;
+    figure {
+      width: 6.4rem;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &::after {
+        content: counter(my-counter);
+        counter-increment: my-counter 1;
+        @include poppins-font(3.6rem, 700, normal);
+      }
+    }
+    .youtube-card-title {
+      text-wrap: nowrap;
+      @include poppins-font(2.4rem, 500, normal);
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .youtube-link {
+      @include poppins-font(2rem, 400, normal);
+      color: $white-color;
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      text-wrap: nowrap;
+      align-items: center;
+      column-gap: 1rem;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      i {
+        color: $red-color;
+      }
+    }
+  }
+  &:hover {
+    .youtube-card-content {
+      transform: translateY(-25%);
+      .youtube-link {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// common class for plan card
+.plan-card {
+  margin-top: 5.667rem;
+  border-radius: 2rem;
+  padding: 0;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+  .card-tag {
+    padding: 1rem;
+    @include poppins-font(2.4rem, 500, normal);
+    text-align: center;
+    display: none;
+  }
+  .card-body {
+    border-radius: 0 0 2rem 2rem;
+    padding: 3rem 6rem;
+    text-align: center;
+    .card-sub-title {
+      @include poppins-font(2.4rem, 500, normal);
+      margin-bottom: 2rem;
+    }
+    .card-title {
+      @include poppins-font(4rem, 600, 5.2rem);
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    ul {
+      padding: 0;
+      .list-item {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin-bottom: 2rem;
+        @include poppins-font(1.6rem, 500, 2.08rem);
+        &::before {
+          content: "\f00c";
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.plan-card-active {
+  margin-top: 0;
+  .card-tag {
+    display: inline-block;
+  }
+  .card-body {
+    color: $white-color;
+    background: $primary-color;
+    ul {
+      .list-item {
+        &::before {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+// common class for blog card
+.blog-card {
+  border: none;
+  figure {
+    border-radius: 1rem;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 4rem;
+    figcaption {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translateY(50%);
+      background: $white-color;
+      color: $gray-color;
+      padding: 1rem 2rem;
+      margin: 0;
+      border-radius: 0 1rem 0 0;
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+      @include poppins-font(1.4rem, 300, normal);
+    }
+  }
+  .card-body {
+    padding: 0;
+    .card-title {
+      @include poppins-font(2.8rem, 500, 3rem);
+      text-align: start;
+    }
+  }
+
+  &:hover {
+    .card-title {
+      color: $light-green-color;
+    }
+  }
+}
+
+// faq section styling
+
+// page title section styling
+.page-title-section {
+  width: 100%;
+  height: 22.6rem;
+  margin-bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/page-title-bg.png") center no-repeat;
+  background-size: cover;
+  color: $white-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    .page-title {
+      text-transform: capitalize;
+      @include poppins-font(3rem, 600, normal);
+    }
+    .breadcrumb {
+      justify-content: center;
+      margin: 0;
+      @include poppins-font(2.2rem, 600, normal);
+      .breadcrumb-item {
+        a {
+          color: $white-color;
+        }
+      }
+      .breadcrumb-item ~ .breadcrumb-item {
+        display: flex;
+        align-items: center;
+        &::before {
+          content: "\f054";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 1.8rem;
+          color: $white-color;
+        }
+      }
+      .active {
+        color: $primary-color;
+      }
+    }
+  }
+}
+// abouit us card styling of about page
+.about-us-card {
+  padding: 0 1rem;
+  .card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    position: relative;
+    figure {
+      width: 11rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.2;
+    }
+    .card-body {
+      .card-title {
+        @include poppins-font(2rem, 600, normal);
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin: 0;
+        &::before {
+          content: "0" counter(my-counter-2);
+          counter-increment: my-counter-2 1;
+          @include poppins-font(5rem, 500, normal);
+          color: #444;
+        }
+      }
+      .card-text {
+        @include line-clamp(5);
+        margin: 0;
+      }
+    }
+  }
+  &:hover {
+    .card-title {
+      color: $light-green-color;
+    }
+  }
+}
+
+// elevate-messages section styling
+.elevate-message-section {
+  .container {
+    .section-heading {
+      &::after {
+        display: none;
+      }
+    }
+    .row {
+      .elevate-message-img-col {
+        height: 27rem;
+        > figure:nth-child(2) {
+          top: 20%;
+        }
+        > figure:last-child {
+          figure {
+            width: 6rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+          animation: bouncing-animation-2 1.5s infinite alternate;
+        }
+      }
+      .elevate-message-content {
+        padding-left: 2rem;
+        .tag-line {
+          @include poppins-font(2rem, 600, 2rem);
+          margin-bottom: 2rem;
+        }
+      }
+
+      .elevate-navigator {
+        figure {
+          transform: rotate(9.868deg);
+        }
+      }
+    }
+  }
+}
+
+.inner-page-heading {
+  @include poppins-font(3.6rem, 500, 3.6rem);
+  margin-bottom: 2rem;
+}
+
+.blog-section,
+.blog-page-detail {
+  .container {
+    .row {
+      row-gap: 2rem;
+      > div:nth-child(odd) {
+        padding-right: 2rem;
+      }
+
+      > div:nth-child(even) {
+        padding-left: 2rem;
+      }
+    }
+  }
+}
+
+// pagination styling
+// pagination styling
+.pagination {
+  column-gap: 0.8rem;
+  .page-item {
+    .page-link {
+      border-radius: 0.5rem;
+      padding: 0.7rem 1.3rem;
+      @include poppins-font(1.6rem, 400, normal);
+      letter-spacing: 0.032rem;
+      border: 0.1rem solid $primary-color;
+      color: $primary-color;
+      background: transparent;
+      &:focus {
+        box-shadow: 0 0 0.5rem $primary-color;
+        background: #a6dda7;
+      }
+    }
+  }
+  .page-item.active {
+    .page-link {
+      background: $primary-color;
+      color: $white-color;
+    }
+  }
+}
+
+// sytling of single pages related to company regulations
+.term-condition-page-detail,
+.privacy-page-detail,
+.refund-policy-page-detail {
+  margin: 0;
+  .section-description {
+    margin: 0;
+    ul {
+      list-style-type: disc;
+      li {
+        display: list-item;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// scroll margin top
+.smt {
+  scroll-margin-top: 1rem;
+}
+
+.account-page-heading {
+  @include inter-font(4.8rem, 600, 5.4rem);
+  margin-bottom: 3.4rem;
+}
+
+.account-page-sub-heading {
+  color: #fff;
+  @include inter-font(3.2rem, 500, normal);
+  margin-bottom: 2rem;
+}
+
+.account-page-youtube-link {
+  width: max-content;
+  color: #fff;
+  @include poppins-font(2rem, 400, normal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  i {
+    color: #ff0000;
+  }
+}
+
+// common class for login,sign up and forget password page
+.account-page {
+  .account-page-detail {
+    margin: 0;
+    .container {
+      .row {
+        .account-img-col {
+          padding: 9rem 7rem 9rem 10rem;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          .website-logo {
+            margin-bottom: 12.7rem;
+          }
+          p {
+            color: #fff;
+            @include inter-font(1.6rem, 500, 2.6rem);
+            margin-bottom: 2.5rem;
+          }
+        }
+
+        > div:first-child {
+          padding-right: 0;
+        }
+
+        > div:last-child {
+          background: #fff;
+          padding-left: 0;
+        }
+      }
+    }
+
+    // common class for form of login,sign up and forget password page
+    .account-form {
+      padding: 9rem 10rem;
+      box-shadow: none;
+      border: none;
+      outline: none;
+      border-radius: 0;
+
+      a,
+      p {
+        @include poppins-font(1.6rem, 500, normal);
+      }
+
+      a {
+        color: $primary-color;
+      }
+
+      input {
+        font-size: 1.6rem !important;
+        line-height: normal !important;
+      }
+
+      label {
+        position: static;
+        font-size: 1.6rem !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        margin-bottom: 1rem;
+      }
+
+      .password-container {
+        position: relative;
+        input {
+          padding-right: 3rem !important;
+        }
+
+        i {
+          position: absolute;
+          font-size: 1.6rem;
+          top: 50%;
+          right: 6%;
+          transform: translate(50%, -50%);
+          cursor: pointer;
+        }
+      }
+
+      button {
+        width: 100%;
+        margin-bottom: 2.5rem;
+      }
+
+      > div {
+        margin-bottom: 2.5rem;
+      }
+
+      > div:last-child {
+        margin: 0;
+        p {
+          margin: 0;
+        }
+      }
+
+      .checkbox-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .checkbox-container {
+          label {
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            display: flex;
+          }
+          input[type="checkbox"] {
+            opacity: 0;
+            position: absolute;
+            width: 2.4rem;
+            height: 2.4rem;
+            cursor: pointer;
+          }
+          input[type="checkbox"] + label {
+            &::before {
+              width: 2.4rem;
+              height: 2.4rem;
+              content: "\f00c";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              padding: 0.2rem;
+              color: $dark-gray-color;
+              border: 2px solid $dark-gray-color;
+              border-radius: 0.5rem;
+              color: $dark-gray-color;
+              transition: all 0.3s ease-in-out;
+              margin-right: 0.8rem;
+            }
+          }
+          input[type="checkbox"]:checked + label {
+            &::before {
+              color: $white-color;
+              background: $primary-color;
+              border-color: $primary-color;
+            }
+          }
+        }
+      }
+
+      .login-option {
+        @include poppins-font(2rem, 600, normal);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 8vw;
+          height: 0.2rem;
+          background: $dark-gray-color;
+        }
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 8vw;
+          height: 0.2rem;
+          background: $dark-gray-color;
+        }
+      }
+    }
+  }
+}

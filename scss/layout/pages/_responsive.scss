@@ -1,0 +1,981 @@
+// FOR LAPTOPS
+@media (max-width: 1299px) {
+  #navbarSupportedContent {
+    column-gap: 2rem !important;
+    .navbar-nav {
+      column-gap: 2rem !important;
+    }
+  }
+}
+
+// FOR SMALL SCREEN LATPOPS AND LARGER SCREEN TABLETS
+@media (min-width: 992px) and (max-width: 1024px) {
+  // LANDING PAGE STYLING
+  header {
+    .lower-header {
+      #navbarSupportedContent {
+        column-gap: 1.5rem !important;
+        .navbar-nav {
+          column-gap: 1.5rem !important;
+          a {
+            font-size: 1.8rem !important;
+            text-wrap: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-section {
+    .banner-img-col {
+      > figure:last-child {
+        top: 10% !important;
+        right: 10% !important;
+      }
+    }
+  }
+
+  .about-section {
+    .about-img-col {
+      > figure:last-child {
+        top: -16% !important;
+      }
+    }
+  }
+
+  .question-section {
+    .question-img-col {
+      > figure:last-child {
+        width: 30rem !important;
+        top: 3.8% !important;
+        left: 9% !important;
+      }
+    }
+  }
+
+  // styling common classes
+  .plan-card {
+    .card-body {
+      padding: 3rem !important;
+    }
+  }
+
+  .youtube-card {
+    .youtube-card-title {
+      text-align: center;
+      text-wrap: wrap !important;
+    }
+  }
+
+  //ABOUT PAGE STYLIING
+  .about-page-detail {
+    .about-img-col {
+      > figure:last-child {
+        top: -18% !important;
+      }
+    }
+  }
+
+  // LOGIN ,SIGN UP FORGET PASSWORD PAGE STYLING
+  .account-form {
+    padding: 9rem 6rem !important;
+  }
+
+  .account-img-col {
+    padding: 5rem !important;
+  }
+}
+
+// TABLETS DEVICES
+@media (min-width: 768px) and (max-width: 991px) {
+  // LANDING PAGE STLYING
+  header {
+    .lower-header {
+      .offcanvas {
+        .offcanvas-body {
+          .nav-item.dropdown {
+            text-align: center !important;
+          }
+          .dropdown-menu {
+            transform: none !important;
+            margin-bottom: 1rem;
+          }
+          .primary-btn {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-section {
+    .banner-desc-col {
+      padding: 0 !important;
+    }
+    .banner-img-col {
+      > figure:first-child {
+        top: 10% !important;
+      }
+
+      > figure:nth-child(2) {
+        top: 24% !important;
+      }
+
+      > figure:last-child {
+        top: 23% !important;
+        figcaption {
+          top: -55% !important;
+          left: -42% !important;
+        }
+        .triangle {
+          top: 98% !important;
+          left: 85% !important;
+          transform: rotate(70deg);
+        }
+      }
+    }
+  }
+
+  .about-section {
+    .container {
+      .row {
+        align-items: center;
+        .about-img-col {
+          > figure:first-child {
+            top: 15% !important;
+          }
+
+          > figure:nth-child(2) {
+            top: 29% !important;
+          }
+
+          > figure:last-child {
+            top: 2% !important;
+            figcaption {
+              top: 8% !important;
+              left: 51% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .why-section {
+    .why-img-col {
+      > figure:last-child {
+        top: 19% !important;
+        figcaption {
+          left: 0% !important;
+          top: 70% !important;
+          .triangle {
+            transform: rotate(-90deg);
+            top: -20px !important;
+            left: 46% !important;
+          }
+          figure {
+            top: -76% !important;
+            right: 16% !important;
+          }
+        }
+      }
+    }
+  }
+
+  .question-section {
+    .container {
+      .row {
+        .question-img-col {
+          > figure:first-child {
+            top: 25% !important;
+          }
+
+          > figure:nth-child(2) {
+            top: 32% !important;
+          }
+
+          > figure:last-child {
+            width: 23rem;
+            top: 25.4% !important;
+            left: 6% !important;
+          }
+        }
+
+        .question-desc-col {
+          form {
+            padding: 4rem 2rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  .youtube-section {
+    .youtube-card {
+      .youtube-card-title {
+        text-align: center;
+        text-wrap: wrap !important;
+      }
+    }
+  }
+
+  // styling common classes
+  .plan-card {
+    .card-body {
+      padding: 3rem !important;
+      text-align: center;
+    }
+  }
+
+  .elevate-message-section {
+    .elevate-message-img-col {
+      > figure:first-child {
+        top: 8% !important;
+      }
+
+      > figure:last-child {
+        width: 15rem;
+        top: 10%;
+        figure {
+          width: 4rem !important;
+        }
+      }
+    }
+  }
+
+  footer {
+    .upper-footer {
+      .row {
+        row-gap: 3rem;
+      }
+    }
+
+    .lower-footer {
+      .footer-logo {
+        &::before,
+        &::after {
+          width: 29vw !important;
+        }
+      }
+      > ul:last-child {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  // INNER BLOG PAGE
+  // common class styling
+  .related-blog-card {
+    flex-wrap: wrap;
+    figure {
+      width: 100% !important;
+    }
+  }
+
+  // LOG IN, SIGN UP AND FORGET PASSWORD PAGE STYLING
+  // styling of common class
+  .account-img-col {
+    padding: 2rem !important;
+    .website-logo {
+      figure {
+        width: 30rem !important;
+      }
+    }
+  }
+
+  .account-form {
+    padding: 2rem !important;
+    .checkbox-container {
+      label {
+        flex-wrap: wrap;
+        > span:last-child {
+          margin-left: 3.1rem !important;
+        }
+      }
+    }
+  }
+
+  // CONTACT US PAGE STYLING
+  .contact-detail-wrapper {
+    padding: 5rem 2rem !important;
+    .contact-links {
+      figure {
+        width: 26rem !important;
+      }
+    }
+    .contact-form {
+      form {
+        padding: 2rem !important;
+        textarea {
+          height: 12rem !important;
+        }
+      }
+    }
+  }
+
+  .map {
+    iframe {
+      height: 25rem !important;
+    }
+  }
+}
+
+// LARGE SCREEN MOBILE DEVICES DEVICES
+@media (max-width: 767px) {
+  // LANDING PAGE STYLING
+  header {
+    .upper-header {
+      display: none;
+    }
+
+    .lower-header {
+      .offcanvas {
+        .offcanvas-body {
+          .nav-item.dropdown {
+            text-align: center !important;
+          }
+          .dropdown-menu {
+            transform: none !important;
+            margin-bottom: 1rem;
+          }
+          .primary-btn {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-section {
+    .row {
+      > div:first-child {
+        order: 2;
+      }
+      > div:last-child {
+        order: 1;
+      }
+    }
+    .banner-desc-col {
+      padding: 0 !important;
+    }
+  }
+
+  .about-section {
+    .about-desc-col {
+      padding: 0 !important;
+    }
+    .about-img-col {
+      > figure:first-child {
+        figcaption {
+          right: 0 !important;
+          top: 0 !important;
+        }
+      }
+
+      > figure:last-child {
+        left: 11% !important;
+      }
+    }
+  }
+
+  .why-section {
+    .row {
+      > div:first-child {
+        order: 2;
+      }
+      > div:last-child {
+        order: 1;
+      }
+
+      .why-img-col {
+        > figure:last-child {
+          top: 15% !important;
+          right: 5% !important;
+        }
+      }
+    }
+  }
+
+  .question-section {
+    .question-img-col {
+      > figure:first-child,
+      > figure:nth-child(2) {
+        transform: none !important;
+      }
+      > figure:last-child {
+        left: 20% !important;
+      }
+    }
+  }
+
+  .service-section {
+    .row {
+      row-gap: 2rem;
+    }
+    .service-cards {
+      .row {
+        row-gap: 2rem !important;
+      }
+    }
+  }
+
+  .youtube-section {
+    .youtube-wrapper {
+      flex-direction: column;
+      height: max-content !important;
+      .youtube-card {
+        flex: none !important;
+        width: 100% !important;
+        height: 20rem !important;
+        border: none;
+        border-bottom: 1px solid $white-color;
+        .youtube-card-content {
+          figure,
+          .number {
+            top: 50% !important;
+          }
+          .youtube-link {
+            top: 0% !important;
+            transform: translate(-50%, 50%) !important;
+          }
+        }
+        &:hover {
+          .youtube-card-content {
+            .youtube-link {
+              top: 100% !important;
+              transform: translate(-50%, -50%) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  // common class
+  .plan-card {
+    margin: 0 !important;
+  }
+
+  .plan-section {
+    .container {
+      .row {
+        row-gap: 2rem;
+      }
+    }
+  }
+
+  .blog-section,
+  .blog-page-detail {
+    .container {
+      .row {
+        > div:nth-child(odd) {
+          padding-right: 0.75rem !important;
+        }
+
+        > div:nth-child(even) {
+          padding-left: 0.75rem !important;
+        }
+      }
+    }
+  }
+
+  .elevate-message-section {
+    .container {
+      .row {
+        row-gap: 2rem;
+        .elevate-message-img-col {
+          height: 43rem !important;
+          > figure:nth-child(2) {
+            top: 12% !important;
+            right: 7% !important;
+          }
+          > figure:last-child {
+            top: 30%;
+            left: 30%;
+          }
+        }
+
+        .elevate-navigator {
+          display: none;
+        }
+      }
+    }
+  }
+
+  footer {
+    .upper-footer {
+      .row {
+        row-gap: 2rem !important;
+        > div:first-child {
+          padding-right: 0.75rem !important;
+        }
+      }
+    }
+    .lower-footer {
+      .footer-logo {
+        margin-bottom: 1rem !important;
+        &::after,
+        &::before {
+          width: 17vw !important;
+        }
+      }
+    }
+  }
+  // ABOUT PAGE STYLING
+  .about-page-detail {
+    .container {
+      > div:first-child {
+        .about-img-col {
+          > figure:first-child {
+            figcaption {
+              top: 0 !important;
+              right: 0 !important;
+            }
+          }
+          > figure:last-child {
+            top: -8% !important;
+            left: 11% !important;
+          }
+        }
+      }
+
+      > div:last-child {
+        row-gap: 2rem;
+      }
+    }
+  }
+
+  // SERVICE PAGE STYLIGN
+  .other-service {
+    .row {
+      row-gap: 2rem;
+    }
+  }
+
+  // PRICING PLAN PAGE STYLING
+  .pricing-plans-page-detail {
+    .container {
+      > .row {
+        row-gap: 2rem;
+      }
+    }
+  }
+
+  // SINGLE BLOG PAGE STYLING
+  .inner-blog-page {
+    .container {
+      .row {
+        .blog-content {
+          padding: 0;
+        }
+      }
+    }
+  }
+  // LOGIN, SIGNUP AND FORGET PASSWORD PAGE STYLING
+  .account-page-detail {
+    .container {
+      .row {
+        > div:first-child {
+          padding-right: 0.75rem !important;
+          .account-img-col {
+            padding: 5rem !important;
+          }
+        }
+        > div:last-child {
+          padding-left: 0.75rem !important;
+          .account-form {
+            padding: 5rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  // CONTACT PAGE STLYLING
+  .contact-detail-wrapper {
+    .row {
+      row-gap: 2rem;
+    }
+  }
+}
+
+// MOBILE DEVICES OR SMALL SCREEN DEVICES
+@media (max-width: 575px) {
+  header {
+    .upper-header {
+      .container {
+        .row {
+          > div:first-child {
+            > ul {
+              flex-wrap: wrap;
+              row-gap: 1rem;
+              justify-content: center !important;
+            }
+          }
+          > div:last-child {
+            > ul {
+              justify-content: center !important;
+              column-gap: 5rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner-section {
+    .banner-img-col {
+      > figure:last-child {
+        top: 10% !important;
+        right: 0.5% !important;
+      }
+    }
+  }
+
+  .about-section,
+  .about-page-detail {
+    .container {
+      > div:first-child {
+        .about-img-col {
+          > figure:last-child {
+            left: 10% !important;
+            top: -5% !important;
+          }
+        }
+      }
+    }
+  }
+
+  .why-section {
+    .row {
+      .why-img-col {
+        > figure:last-child {
+          top: 5% !important;
+          right: 10% !important;
+          figcaption {
+            left: 15% !important;
+            top: 65% !important;
+            .triangle {
+              transform: rotate(-90deg);
+              top: -20px !important;
+              left: 46% !important;
+            }
+            figure {
+              top: -76% !important;
+              right: 16% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .question-section {
+    .question-img-col {
+      > figure:last-child {
+        top: 0% !important;
+        left: 5% !important;
+      }
+    }
+  }
+
+  .elevate-message-section {
+    .container {
+      .row {
+        .elevate-message-img-col {
+          > figure:last-child {
+            top: 25%;
+            left: 22%;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .lower-footer {
+      > ul:first-child {
+        justify-content: center !important;
+        li {
+          margin-bottom: 1rem !important;
+        }
+      }
+      > ul:last-child {
+        flex-direction: column;
+        align-items: center;
+        > li:last-child {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+
+  // SERVICE PAGE STYLING
+  .service-page-detail {
+    .section-heading {
+      text-align: center;
+    }
+  }
+
+  // SINGLE SERVICE PAGE STYLING
+  .single-service-page {
+    .breadcrumb-item.active {
+      white-space: wrap !important;
+      flex-wrap: wrap !important;
+    }
+  }
+
+  // LOG IN, SIGN UP AND FORGET PASSWORD PAGE STYLING
+  .account-form {
+    .checkbox-row {
+      flex-wrap: wrap;
+      row-gap: 2rem;
+    }
+    .login-option {
+      text-align: center;
+      &::after,
+      &::before {
+        width: 15vw !important;
+      }
+    }
+  }
+}
+
+// SMALL SCREEN MOBILE DEVICES
+@media (max-width: 480px) {
+  // LANDING PAGE STYLING
+  .banner-section {
+    .banner-img-col {
+      > figure:last-child {
+        width: 25rem;
+        top: 25% !important;
+        right: 5% !important;
+        figcaption {
+          width: 16rem !important;
+          top: 3% !important;
+          left: -37% !important;
+        }
+      }
+    }
+  }
+
+  .about-section,
+  .about-page-detail {
+    .container {
+      > div:first-child {
+        .about-img-col {
+          > figure:last-child {
+            top: 0 !important;
+            figcaption {
+              width: 15rem !important;
+              left: 52% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .question-section {
+    .question-img-col {
+      > figure:last-child {
+        width: 30rem;
+        top: 6% !important;
+        left: 8% !important;
+      }
+    }
+  }
+
+  .elevate-message-section {
+    .container {
+      .row {
+        .elevate-message-img-col {
+          > figure:last-child {
+            width: 30rem;
+            top: 12%;
+            left: 8%;
+          }
+        }
+      }
+    }
+  }
+
+  // LOG IN,SIGN UP AND FORGET PASSWORD PAGE
+  .account-page-detail {
+    .container {
+      .row {
+        > div:first-child {
+          .account-img-col {
+            padding: 1rem !important;
+            .website-logo {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+        > div:last-child {
+          .account-form {
+            padding: 1rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  // CONTACT US PAGE STYLING
+  .contact-page-detail {
+    .contact-detail-wrapper {
+      padding: 5rem 1rem !important;
+      .row {
+        figure {
+          width: 30rem !important;
+        }
+      }
+    }
+  }
+}
+
+// SMALL MOBILE DEVICES
+
+@media (max-width: 376px) {
+  footer {
+    .lower-footer {
+      .footer-logo {
+        &::after,
+        &::before {
+          width: 8vw !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  // LANDING PAGE STYLING
+
+  // styling of common img col class
+  .img-col {
+    height: 32rem !important;
+  }
+
+  // styling of common section heading class
+  .section-heading {
+    justify-content: center;
+    text-align: center;
+  }
+
+  // styling of plan card common class
+  .plan-card {
+    .card-body {
+      padding: 3rem;
+    }
+  }
+
+  // styling of inner page heading common class
+  .inner-page-heading {
+    text-align: center;
+  }
+
+  // styling of responsive navbar
+  .offcanvas-header {
+    a {
+      width: 20rem;
+    }
+  }
+
+  .offcanvas-body {
+    .navbar-nav {
+      padding: 0 !important;
+      .dropdown-menu {
+        width: 25rem !important;
+      }
+    }
+  }
+
+  .banner-section {
+    .banner-img-col {
+      > figure:last-child {
+        top: 0% !important;
+        right: 5% !important;
+        figcaption {
+          width: 25rem !important;
+          top: 72% !important;
+          left: -5% !important;
+          .triangle {
+            top: -12% !important;
+            left: 35% !important;
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
+  }
+
+  .about-section,
+  .about-page-detail {
+    .container {
+      > div:first-child {
+        .about-img-col {
+          > figure:last-child {
+            top: -10% !important;
+            left: 0 !important;
+            width: 25rem !important;
+            figcaption {
+              left: 52% !important;
+              width: 17rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .why-section {
+    .row {
+      .why-desc-col {
+        .section-description {
+          ul {
+            padding: 0;
+          }
+        }
+      }
+      .why-img-col {
+        > figure:last-child {
+          top: 0% !important;
+          figcaption {
+            left: 5% !important;
+          }
+        }
+      }
+    }
+  }
+
+  .question-section {
+    .question-img-col {
+      > figure:last-child {
+        width: 24rem;
+      }
+    }
+  }
+
+  .elevate-message-section {
+    .container {
+      .row {
+        .elevate-message-img-col {
+          height: 30rem !important;
+          > figure:last-child {
+            width: 25rem;
+          }
+        }
+      }
+    }
+  }
+
+  // SERVICE PAGE STYLING
+  .service-page {
+    .page-title-section {
+      .page-title {
+        text-align: center;
+      }
+    }
+  }
+}
